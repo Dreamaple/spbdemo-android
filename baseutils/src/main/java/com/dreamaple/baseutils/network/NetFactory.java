@@ -6,17 +6,18 @@ import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
 
 public class NetFactory extends Converter.Factory {
-    public static NetFactory create() {
+    static NetFactory create() {
         return new NetFactory();
     }
 
-    public NetFactory() {
+    private NetFactory() {
         super();
     }
 
@@ -36,7 +37,7 @@ public class NetFactory extends Converter.Factory {
         }
         //在这个方法中处理response
         @Override
-        public T convert(ResponseBody value) throws IOException {
+        public T convert(@NonNull ResponseBody value) throws IOException {
             return (T) value.string();
         }
     }

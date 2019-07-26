@@ -16,12 +16,13 @@ public class CallBack implements Callback<Object> {
     public CallBack(ACallBack aCallBack) {
         this.aCallBack = aCallBack;
     }
-    //私有化构造方法
-    private CallBack() {
-    }
+
     @Override
     public void onResponse(Call<Object> call, Response<Object> response) {
 //        Log.e("222222",)
+        if (BaseApplication.getInstance().isDebug()) {
+            
+        }
         if (response.code() != 200) {
             Log.e("response.code()", String.valueOf(response.code()));
             aCallBack.failed(String.format(BaseApplication.getInstance().getString(R.string.server_exception),response.code()));

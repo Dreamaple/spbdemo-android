@@ -26,7 +26,7 @@ public class UserMainActivity extends BaseActivity {
         String signature = "anything";
         String local = "dalaoshua";
         textview_test = this.findViewById(R.id.textview_test);
-        NetworkUtil.getIns().create(UserApi.class).register(username,nickname,pwd,sex,tel,birth,email,signature,local).enqueue(new CallBack(new CallBack.ICallBack() {
+        NetworkUtil.getIns().create(UserApi.class).register(username,nickname,pwd,sex,tel,birth,email,signature,local).enqueue(new CallBack(new CallBack.ACallBack() {
             @Override
             public void successed(JSONObject jsonObject) {
                 textview_test.setText(jsonObject.toJSONString());

@@ -19,7 +19,6 @@ public class MainActivity extends BaseActivity {
     TextView textView;
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -32,6 +31,5 @@ public class MainActivity extends BaseActivity {
                 textView.setText(jsonObject.toJSONString());
             }
         }));
-        Util.isOnBackgroundThread();
     }
 }

@@ -17,6 +17,10 @@ public class BaseApplication extends Application {
         return debug;
     }
 
+    public void setDebug(boolean debug) {
+        this.debug = debug;
+    }
+
     public static BaseApplication getInstance() {
         return baseApplication;
     }
