@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+<!--    <color name="colorPrimary">@color/orange_500</color>-->
+<!--    <color name="colorPrimaryDark">@color/orange_700</color>-->
+<!--    <color name="colorAccent">@color/text_icon</color>-->
+<!--    <color name="colorPrimary">@color/orange_50</color>-->
+
+    <color name="colorPrimary">@color/colorPrimaryDark</color>
+    <color name="colorPrimaryDark">@color/orange_500</color>
+    <color name="colorAccent">@color/orange_200</color>
+    <color name="windowBackg">@color/orange_300</color>
+    <color name="navigationColor">@color/orange_400</color>
+    <color name="textColorPrimary">@color/text_icon</color>
+    <color name="colorControlNormal">@color/orange_600</color>
+    <color name="statusBarColor">@color/colorPrimaryDark</color>
+
+<!--    <color name="colorPrimary">#ffffff</color>-->
+<!--    <color name="colorPrimaryDark">#ffffff</color>-->
+<!--    <color name="colorAccent">#ffffff</color>-->
+<!--    <color name="windowBackg">#ffffff</color>-->
+<!--    <color name="navigationColor">#ffffff</color>-->
+<!--    <color name="textColorPrimary">#ffffff</color>-->
+<!--    <color name="colorControlNormal">#ffffff</color>-->
+<!--    <color name="statusBarColor">#ffffff</color>-->
+
+    <!--页面背景色-->
+<!--    colorPrimary-->
+<!--    <item name="android:windowBackground">@color/windowBackg</item>-->
 </resources>

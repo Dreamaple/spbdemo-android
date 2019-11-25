@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="TabView">
+    <declare-styleable name="SpdTabView">
         <attr name="mHeight" format="integer"/>
         <attr name="mWidth" format="integer"/>
         <attr name="mName" format="string"/>

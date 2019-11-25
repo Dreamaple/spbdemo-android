@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="horizontal">
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:title="@string/hello_blank_fragment"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+<!--todo theme需要修改-->
+<!--    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:background="@color/text_icon">-->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:title="@string/hello_blank_fragment"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
 
-
-</LinearLayout>
+<!--</LinearLayout>-->

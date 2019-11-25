@@ -1,6 +1,7 @@
 package com.dreamaple.baseutils;
 
 import android.app.Application;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -37,13 +38,16 @@ public class BaseApplication extends Application {
     }
 
     public void spdToast(String msg) {
+        if (TextUtils.isEmpty(msg)) {
+            msg = "null";
+        }
         if (toast != null) {
             toast.cancel();
-        } else {
-            toast = new Toast(this);
+            toast = null;
         }
-        toast.setText(msg);
+        toast = Toast.makeText(BaseApplication.getInstance(), msg, Toast.LENGTH_LONG);
         toast.show();
 //        Toast.makeText(this, msg, Toast.LENGTH_SHORT);
     }
+
 }

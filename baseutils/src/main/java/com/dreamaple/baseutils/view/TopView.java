@@ -2,13 +2,15 @@ package com.dreamaple.baseutils.view;
 
 import android.content.Context;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
 import com.dreamaple.baseutils.R;
 
-public class TopView extends LinearLayout {
+public class TopView extends Toolbar {
     public TopView(Context context) {
         super(context);
         init(context);
