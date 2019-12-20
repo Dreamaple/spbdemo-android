@@ -1,1 +1,1 @@
-include ':app', ':baseutils', ':user', ':testpackage', ':spd_video'
+include ':app', ':baseutils', ':user', ':testpackage', ':spd_video', ':spd_user'

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.alibaba.fastjson.JSONObject;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.dreamaple.baseutils.BaseFragment;
@@ -148,7 +149,9 @@ public class VideoFragment extends BaseFragment {
         videoFragmentRecyclerViewAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-
+//                ARouter.getInstance().build("/spd_user/login").navigation();
+//                ARouter.getInstance().build("/user/main").navigation();
+                ARouter.getInstance().build("/video/videoplayerlist").navigation();
             }
         });
 

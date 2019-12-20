@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.VideoPlayerActivity"></activity>
+        <activity android:name=".activity.VideoPlayerListActivity" />
         <activity android:name=".VideoMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

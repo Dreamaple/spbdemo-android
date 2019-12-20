@@ -22,4 +22,8 @@ public interface UserApi {
 
     @GET("home/index")
     Call<Object> index();
+
+
+    @GET("/recommend")
+    Call<Object> recommend();
 }

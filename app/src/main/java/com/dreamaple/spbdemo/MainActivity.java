@@ -17,7 +17,6 @@ import java.util.List;
 public class MainActivity extends BaseActivity {
 //    Button button;
 //    TextView textView;
-
     SpdTabView spdTabView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

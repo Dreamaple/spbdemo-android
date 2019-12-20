@@ -36,16 +36,20 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.3.0-alpha02'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha02'
-    implementation project(path: ':baseutils')
-    api project(path: ':user')
-    api project(path: ':baseutils')
-    api project(path: ':testpackage')
+
+
+    //annotationProcessor
     //ARouter
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
-    api 'com.alibaba:arouter-api:1.5.0'
-    compile project(path: ':spd_video')
-
-
-    implementation 'org.jokar:permissiondispatcher:2.0.8'
+    //glide
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    //permissiondispatcher
     annotationProcessor 'org.jokar:permissiondispatcher-processor:2.0.8'
+
+//    implementation project(path: ':baseutils')
+    implementation project(path: ':user')
+    implementation project(path: ':baseutils')
+    implementation project(path: ':testpackage')
+    implementation project(path: ':spd_video')
+    implementation project(path: ':spd_user')
 }

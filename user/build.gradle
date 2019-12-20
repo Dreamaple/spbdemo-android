@@ -40,12 +40,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.3.0-alpha02'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha02'
-    api project(path: ':baseutils')
+
+    //annotationProcessor
     //ARouter
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
-    api 'com.alibaba:arouter-api:1.5.0'
-
-
-    implementation 'org.jokar:permissiondispatcher:2.0.8'
+    //glide
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    //permissiondispatcher
     annotationProcessor 'org.jokar:permissiondispatcher-processor:2.0.8'
+
+    //module
+    api project(path: ':baseutils')
 }

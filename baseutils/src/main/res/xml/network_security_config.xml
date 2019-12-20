@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--Set application-wide security config using base-config tag.-->
+<!--    这里添加它可以访问非https-->
+    <base-config cleartextTrafficPermitted="true"/>
+<!--    <domain-config cleartextTrafficPermitted="true">-->
+<!--        <domain includeSubdomains="true">(Your URL)xxx.x.xxx.xx</domain>-->
+<!--        <domain includeSubdomains="true">x.xxx.xx</domain>-->
+<!--    </domain-config>-->
+<!--    <domain-config cleartextTrafficPermitted="true">-->
+<!--        <domain includeSubdomains="true">domain.com (to be adjusted)</domain>-->
+<!--    </domain-config>-->
+</network-security-config>
