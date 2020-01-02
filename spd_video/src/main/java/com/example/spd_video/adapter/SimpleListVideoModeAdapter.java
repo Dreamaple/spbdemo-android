@@ -75,7 +75,7 @@ public class SimpleListVideoModeAdapter extends BaseAdapter {
         if (position % 2 == 0) {
             holder.gsyVideoPlayer.loadCoverImage(url, R.drawable.glide_error);
         } else {
-            holder.gsyVideoPlayer.loadCoverImage(url, R.mipmap.basedemo);
+            holder.gsyVideoPlayer.loadCoverImage(url, R.drawable.basedemo);
         }
 
         holder.gsyVideoPlayer.setUpLazy(url, true, null, null, "这是title");

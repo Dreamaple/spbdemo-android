@@ -8,18 +8,19 @@
     tools:context=".activity.VideoPlayerActivity">
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways" >
+            android:layout_height="wrap_content" >
 
             <com.dreamaple.baseutils.view.TopView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways"/>
 
+            <com.example.spd_video.view.SampleCoverVideo
+                android:id="@+id/detail_player"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_scrollFlags="scroll|enterAlways" />
         </com.google.android.material.appbar.AppBarLayout>
-        <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
-            android:id="@+id/detail_player"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"

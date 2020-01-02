@@ -151,7 +151,7 @@ public class VideoFragment extends BaseFragment {
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
 //                ARouter.getInstance().build("/spd_user/login").navigation();
 //                ARouter.getInstance().build("/user/main").navigation();
-                ARouter.getInstance().build("/video/videoplayerlist").navigation();
+                ARouter.getInstance().build("/video/videoplayer").navigation();
             }
         });
 

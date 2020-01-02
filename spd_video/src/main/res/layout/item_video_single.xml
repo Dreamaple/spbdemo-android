@@ -19,7 +19,7 @@
         android:layout_height="112dp"
         android:layout_gravity="top"
         android:scaleType="centerCrop"
-        android:src="@mipmap/basedemo" />
+        android:src="@drawable/basedemo" />
 
     <RelativeLayout
         android:layout_width="match_parent"
